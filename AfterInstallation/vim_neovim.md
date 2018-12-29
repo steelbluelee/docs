@@ -4,4 +4,5 @@
 1. Execute the following commands.
 
 ~~~
+pip3 install sexpdata websocket-client pynvim --user
 ~~~
