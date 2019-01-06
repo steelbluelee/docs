@@ -62,6 +62,25 @@
     postgres=# \password sentry
     ~~~
 
+1. you can access the database that you've just created with the new user using psql
+    - in linux
+       ~~~
+       psql \
+            --host=<DB instance endpoint> \
+            --port=<port> \
+            --username=<master user name> \
+            --password \
+            --dbname=<database name> 
+       ~~~
+    - in windows
+        ~~~ 
+        psql ^
+            --host=<DB instance endpoint> ^
+            --port=<port> ^
+            --username=<master user name> ^
+            --password ^
+            --dbname=<database name> 
+         ~~~
 
 1. install pgadmin4 in my labtop
     ~~~
