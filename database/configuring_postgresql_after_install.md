@@ -1,13 +1,13 @@
 # How to configure postgresql after installation
 
-1. change the password of the postgres user
+1. change the password of the postgres user<BR>
+    in command line prompt
     ~~~
-    # in command line prompt
-    # The \password is always stored encrypted in the system catalogs.
-    # The ENCRYPTED keyword has no effect, but is accepted for backwards compatibility.
     ~# sudo -u postgres psql
     ~# ALTER USER postgres with encrypted password 'my_password';
     ~~~
+    The \password is always stored encrypted in the system catalogs.
+    The ENCRYPTED keyword has no effect, but is accepted for backwards compatibility.
 
 1. edit /var/lib/pgsql/11/data/pg_hba.conf file
     ~~~
@@ -60,6 +60,10 @@
     postgres=# create database sentrydb ENCODING 'UTF-8' ;
     postgres=# GRANT ALL PRIVILEGES ON DATABASE sentrydb TO sentry;
     postgres=# \password sentry
+    ~~~
+    cf)
+    ~~~
+    postgres=# create user sentry WITH SUPERUSER PASSWORD 'sentry';
     ~~~
 
 1. you can access the database that you've just created with the new user using psql
