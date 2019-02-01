@@ -5,4 +5,5 @@
 
 ~~~
 pip3 install sexpdata websocket-client pynvim --user
+pip3 install --upgrade vim-vint --user
 ~~~
