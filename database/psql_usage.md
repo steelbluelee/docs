@@ -35,7 +35,7 @@
 
 - to show all table in the current database
     ~~~
-    \dl
+    \dt
     ~~~
 
 ## Managing databases and users
