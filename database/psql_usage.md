@@ -37,3 +37,11 @@
     ~~~
     \dl
     ~~~
+
+## Managing databases and users
+
+- to make a user and a database
+    ~~~
+    create user dictionary password 'password';
+    create database dictionary encoding 'UTF-8' owner dictionary;
+    ~~~
