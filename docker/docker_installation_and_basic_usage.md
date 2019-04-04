@@ -143,6 +143,11 @@
     * without Z option, there may be a selinux related problem. See https://stackoverflow.com/questions/24288616/permission-denied-on-accessing-host-directory-in-docker
     * if a permission problem occur, you need to chmod your test folder and index.html
 
+- to set hostname
+    ~~~
+    docker run --hostname {hostname} --name {name} {image}
+    ~~~
+
 ## Example : Using Fedora
 
 ~~~
