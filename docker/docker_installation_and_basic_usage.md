@@ -7,6 +7,10 @@
     sudo dnf install docker
     ~~~
 
+    ~~~
+    sudo apt install docker.io
+    ~~~
+
 - to start docker server
     ~~~
     sudo systemctl start docker
