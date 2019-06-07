@@ -156,7 +156,7 @@
 
 ~~~
 sudo docker pull fedora:29
-sudo docker container run -it --name fedora fedora /bin/bash
+sudo docker container run -it --name fedora --hostname fedora fedora:latest /bin/bash
 sudo docker start fedora
 sudo docker attach fedora
 <C-p><C-q>
